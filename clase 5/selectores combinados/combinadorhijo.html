@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combiandor de hijo</title>
+
+    <style>
+        /*selecciona solo los <p> que son hijos directos de <div>*/
+            .padre > p {
+                color: blueviolet;
+            }
+        
+    </style>
+
+</head>
+<body>
+    
+    <div class="padre">
+    <p>este es un parrafo hijo dentro de un div</p>
+        <div>
+            <p>
+                este parrafo no sera afectado porque esta anidado dentro de otro div
+            </p>
+        </div>
+    </div>
+
+    <p>este parrafo no sera afectado</p>
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+.cajashadow {
+    background-color: #8c54fb;
+    width: 100px;
+    height: 100px;
+}
+
+.offset-XY {
+    box-shadow: 10px 10px;
+}
+
+.blurradius{
+    box-shadow: 10px 10px 5px;
+}
+
+.spreadradius{
+    box-shadow: 10px 10px 5px 5px ;
+}
+
+.opacidad{
+    box-shadow: 10px 10px 5px 5px crimson;
+}
+
+.inset{
+    box-shadow: inset 10px 10px 5px 5px crimson;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+.font-fa{
+    font-family: "Comic Neue", cursive;
+}
+
+.font-wl{
+    font-weight: bold;
+}
+
+.font-st{
+    font-style: italic;
+}
+
+.font-sz{
+    font-size: 20px;
+}
+
+.letter-spa{
+    letter-spacing: 20px;
+}
+
+.word-spa{
+    word-spacing: 20px;
+}
+
+.lines{
+    line-height: 55px;
+}
+
+.text-al{
+    text-align: end;
+}
+
+.transform{
+    text-transform: uppercase;
+}
+
+.decoration{
+    text-decoration: overline;
+}
+
+.list-style{
+    list-style-type: none;
+}
+
+.listType{
+    list-style-type: lower-alpha;
+    list-style-position: outside;
+    background: blue;
+}
+
+.imagenx{
+    list-style-image: url('./img/messi-list-img.jpg');
+    list-style-position: inside;
+}
