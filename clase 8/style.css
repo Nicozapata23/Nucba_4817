@@ -1,0 +1,256 @@
+/*Cajas padres*/
+
+.container{
+    background: #4d4a4a;
+    padding: 10px;
+    border-radius: 1rem;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.caja-flex{
+    background: crimson;
+    width: 100px;
+    height: 100px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 250px;
+}
+
+.no-wrap{
+    display: flex;
+    max-width: 250px;
+}
+
+.flexflow{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 250px;
+}
+
+.jc-start{
+    display: flex;
+    justify-content: start;
+}
+
+.jc-end{
+    display: flex;
+    justify-content: end;
+}
+
+.jc-center{
+    display: flex;
+    justify-content: center;
+}
+
+.jc-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.jc-space-around{
+    display: flex;
+    justify-content: space-around;
+}
+
+.jc-space-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column-container{
+    background: #4d4a4a;
+    height: 350px;
+    padding: 10px;
+    border-radius: 1rem;
+    margin: 20px 0;
+    max-width: 500px;
+    
+}
+
+.ai-start{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.ai-end{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.ai-center{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.caja-flex-stretch{
+    background-color: crimson;
+    width: 100px;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.ai-stretch{
+    display: flex;
+    align-items: stretch;
+    gap: 15px;
+}
+
+.caja-flex-baseline{
+    width: 100px;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.baseline-1{
+    background-color: aqua;
+    padding-top: 30px;
+}
+
+.baseline-2{
+    background-color: black;
+    padding-top: 50px;
+}
+
+.baseline-3{
+    background-color: purple;
+    padding-top: 80px;
+}
+
+.ai-baseline{
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.ac-start{
+    display: flex;
+    align-content: flex-start;
+}
+
+.props-column-container{
+    height: 550px;
+    background-color: #4d4a4a;
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 350px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.ac-end{
+    align-content: end;
+}
+
+.ac-center{
+    align-content: center;
+}
+
+.ac-space-between{
+    align-content: space-between;
+}
+
+.ac-space-around{
+    align-content: space-around;
+}
+
+.ac-stretch{
+    align-content: stretch;
+}
+
+.stretch{
+    width: auto;
+}
+
+.order1{
+    order: 2;
+}
+
+.order2{
+    order: 3;
+}
+
+.order3 {
+    order: 1;
+}
+
+.grow1{
+    flex-grow: 3;
+}
+
+.shrink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.props-shrink{
+    background-color: purple;
+    max-width: 300px;
+
+}
+
+.shrink1{
+    flex-shrink: 0;
+}
+
+.shrink2{
+    flex-shrink: 2;
+}
+
+.shrink3{
+    flex-shrink: 1;
+}
+
+.grow2{
+    flex-grow: 2;
+}
+
+.basis{
+    display: flex;
+    gap: 10px;
+}
+
+.basis1{
+    flex-basis: 200px;
+}
+
+.basis2{
+    flex-basis: 500px;
+}
+
+.basis3{
+    flex-basis: 150px;
+}
