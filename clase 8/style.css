@@ -254,3 +254,22 @@
 .basis3{
     flex-basis: 150px;
 }
+
+.self {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.self-1 {
+    align-self: flex-start;
+}
+
+.self-2 {
+    align-self: center;
+}
+
+.self-3 {
+    align-self: flex-end;
+}
