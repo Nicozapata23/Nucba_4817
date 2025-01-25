@@ -282,3 +282,162 @@ main{
     font-weight: 600;
     font-size: 18px;
 }
+
+
+/*------------------DISCOVER-----------------*/
+#discover {
+    padding: 60px 0;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.discover-info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.discover-info h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    width: 50%;
+}
+
+.discover-text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.discover-text p{
+    color: var(--text-gray);
+
+}
+
+.discover-text a{
+    color: var(--text-white);
+    text-decoration: underline ;
+    font-weight: 600;
+}
+
+.discover-cards {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover-cards img{
+    width: 30%;
+}
+
+/*--------------------PRODUCTS--------------*/
+
+#products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    max-width: 1200px;
+    gap: 50px;
+}
+
+#products h2{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.categories {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.category {
+    background-color: var(--btn-bg);
+    border: none;
+    padding: 10px 15px;
+    color: var(--text-white);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.active-btn {
+    background-color: var(--primary);
+}
+
+.products-container{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 25px;
+    gap: 20px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    width: 100%;
+    gap: 20px;
+}
+
+.product-top,
+.product-mid,
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-top h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.product-top p,
+.product-use{
+    color: var(--text-gray);
+}
+
+.product-user,
+.offer-time{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-mid span{
+    font-weight: 800;
+}
+
+.offer-time {
+    width: 20px;
+}
+
+.btn-add {
+    background: var(--primary);
+    border: none;
+    padding: 10px 35px;
+    border-radius: 10px;
+    color: var(--text-white);
+    cursor: pointer;
+}
