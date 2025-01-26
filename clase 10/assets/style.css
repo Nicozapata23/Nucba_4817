@@ -441,3 +441,38 @@ main{
     color: var(--text-white);
     cursor: pointer;
 }
+
+.btn-load{
+    background: none;
+    border: 1px solid var(--electric);
+    padding: 10px 35px;
+    border-radius: 10px;
+    color: var(--text-white);
+}
+
+
+/*-------------FOOTER---------------------*/
+footer {
+    background: var(--background);
+    color: var(--text-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+footer a, footer p{
+    color: var(--text-gray);
+    font-size: 14px;
+}
+
+.footer-link {
+    display: flex;
+    gap: 20px;
+}
+
+footer span{
+    font-weight: 800;
+}
+
