@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page NFT</title>
+    <link rel="stylesheet" href="/clase 13/assets/style.css">
+</head>
+<body>
+
+    <!--header-->
+    <header>
+        <img src="./assets/img/logo.png" alt="logo" class="logo">
+        <nav class="navbar">
+            <ul class="navbarlist">
+                <li><a href="#hero" class="active">home</a></li>
+                <li><a href="#discover">descubre</a></li>
+                <li><a href="#products">btc</a></li>
+                <li><a href="#">youtube</a></li>
+                <li><a href="#">contactanos</a></li>
+            </ul>
+
+            <!--Cart toggle-->
+            <label for="cart-toggle">
+                <img src="./assets/img/cart-icon.svg" alt="logo carrit" class="carticon">
+            </label>
+            <input type="checkbox" id="cart-toggle">
+            <!-- Carrito List-->
+                <div class="cart">
+                    <h2>Tus NFTs</h2>
+                    <!--Productos en carrito-->
+                    <div class="cart-item">
+                        <img src="./assets/img/cart/cart-img.png" alt="nft del carrito">
+                        <div class="item-info">
+                            <h3 class="item-title">Messi</h3>
+                            <p class="item-bid">Current Bid</p>
+                            <span class="item-price">4.8 ETH</span>
+                        </div>
+                        <div class="item-handler">
+                            <span class="quantity-handler down">-</span>
+                            <span class="item-quantity">1</span>
+                            <span class="quantity-handler up">+</span>
+                        </div>
+                    </div>
+                </div>
+
+        </nav>
+    </header>
+    
+    <!--main-->
+    <main>
+        <!--hero-->
+        <section id="hero">
+            <div class="hero-info">
+                <h1>Descubre la nueva era de Crypto</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem modi provident, est explicabo fuga obcaecati eaque esse eos iusto totam laudantium ratione <span>magni</span> deserunt molestiae doloremque id suscipit cumque ipsum.</p>
+            <a href="#">Be nucber</a>
+        </div>
+
+        <!--HEROCARD-->
+        <div class="hero-card">
+            <img src="./assets/img/hero/hero-card.png" alt="BTC example">
+            <div class="hero-card-info">
+                <div class="hero-card-top">
+                    <h3>"The greatest of all time"</h3>
+                    <span>10</span>
+                </div>
+                <div class="hero-card-bottom">
+                        <div class="hero-card-creator">
+                            <img src="./assets/img/hero/creator.png" alt="Creator image">
+                            <div class="creatorinfo">
+                            <span>Creador</span>
+                            <p>Carles Rexach</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="hero-card-price">
+                    <p>value</p>
+                    <span>9 ETH</span>
+                </div>
+            </div>
+            
+        </div>
+
+
+            
+        </section>
+
+        <!--info-->
+        <section id="info">
+            <h2>Crea, aprende y comparte los NFTs</h2>
+            <!--Container InfoCards-->
+            <div class="info-cards-container">
+                <!--InfoCard 1-->
+                <div class="info-card">
+                    <img src="./assets/img/info/info-icon.png" alt="info img">
+                    <h3>Configura tu Wallet</h3>
+                    <p>una vez que haya configurado la billetera de su eleccion, conectela a OpenSea.</p>
+                </div>
+                <!--InfoCard 2-->
+                <div class="info-card">
+                    <img src="./assets/img/info/info-icon.png" alt="info img">
+                    <h3>Agrega tus NFTs</h3>
+                    <p> Una vez que haya configurado la billetera de su eleccion, busca NFT en NUCBA y adquiere los que mas te gusten.</p>
+                </div>
+                <!--InfoCard 3-->
+                <div class="info-card">
+                    <img src="./assets/img/info/info-icon.png" alt="info img">
+                    <h3>¡Coleccionalos!</h3>
+                    <p>A partir de ahora, formas parte de la comunidad de NUCBA NFT y vas a poder acceder a contenidos educativos exclusivos sobre el mundo crypto</p>
+                </div>
+
+                        
+                    
+            </div>
+        </section>
+        
+        <!--Descubre-->
+        <section id="discover">
+            <div class="discover-info">
+                
+                <h2>Descubre una nueva era de colecciones</h2>
+                
+                    <div class="discover-text">
+                        <p>tendras la oportunidad de colecciones NFTs sobre distintos topicos, y de este modo acceder a beneficios exclusivos por tomar parte de dicho club. Ej: "Team Star Wars".</p>
+                        <a href="#">Empezar ahora</a>
+                    </div>
+            </div>
+
+            <div class="discover-cards">
+                <img src="./assets/img/discover/darth-vader.png" alt="Darth Vader">
+                <img src="./assets/img/discover/trooper.png" alt="Trooper">
+                <img src="./assets/img/discover/yoda.png" alt="Yoda">
+            </div>
+
+        
+        
+        
+        
+        
+        </section>
+
+        <!--Productos-->
+        <section id="products">
+            <h2>HOT NFTs</h2>
+            <!--Categories-->
+            <div class="categories">
+                <button class="category active-btn">todas</button>
+                <button class="category">Futbol</button>
+                <button class="category">Musica</button>
+                <button class="category">Peliculas</button>
+                <button class="category">Autos</button>
+                <button class="category">Politico</button>
+            </div>
+
+            <!--Products List-->
+            <div class="products-container">
+                <!--product 1-->
+                <div class="product">
+                    <img src="./assets/img/products/toretto.png" alt="Toretto">
+                    <div class="product-info">
+                        <!--Top-->
+                        <div class="product-top">
+                            <h3>toretto</h3>
+                            <p>Current Bid</p>
+                        </div>
+                        <!--Middle-->
+                        <div class="product-mid">
+                            <div class="product-user">
+                                <img src="./assets/img/user.png" alt="user">
+                                <p>@thetroncous</p>
+                            </div>
+                            <span>6.89 eTH</span>
+                        </div>
+                        <!--Bottom-->
+                        <div class="product-bottom">
+                            <div class="offer-time">
+                                <img src="./assets/img/fire.png" alt="Fire">
+                                <p>05:12:07</p>
+                            </div>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <!--product 2-->
+                <div class="product">
+                    <img src="./assets/img/products/toretto.png" alt="Toretto">
+                    <div class="product-info">
+                        <!--Top-->
+                        <div class="product-top">
+                            <h3>toretto</h3>
+                            <p>Current Bid</p>
+                        </div>
+                        <!--Middle-->
+                        <div class="product-mid">
+                            <div class="product-user">
+                                <img src="./assets/img/user.png" alt="user">
+                                <p>@thetroncous</p>
+                            </div>
+                            <span>6.89 eTH</span>
+                        </div>
+                        <!--Bottom-->
+                        <div class="product-bottom">
+                            <div class="offer-time">
+                                <img src="./assets/img/fire.png" alt="Fire">
+                                <p>05:12:07</p>
+                            </div>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <!--product 3-->
+                <div class="product">
+                    <img src="./assets/img/products/toretto.png" alt="Toretto">
+                    <div class="product-info">
+                        <!--Top-->
+                        <div class="product-top">
+                            <h3>toretto</h3>
+                            <p>Current Bid</p>
+                        </div>
+                        <!--Middle-->
+                        <div class="product-mid">
+                            <div class="product-user">
+                                <img src="./assets/img/user.png" alt="user">
+                                <p>@thetroncous</p>
+                            </div>
+                            <span>6.89 eTH</span>
+                        </div>
+                        <!--Bottom-->
+                        <div class="product-bottom">
+                            <div class="offer-time">
+                                <img src="./assets/img/fire.png" alt="Fire">
+                                <p>05:12:07</p>
+                            </div>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <!--product 4-->
+                <div class="product">
+                    <img src="./assets/img/products/toretto.png" alt="Toretto">
+                    <div class="product-info">
+                        <!--Top-->
+                        <div class="product-top">
+                            <h3>toretto</h3>
+                            <p>Current Bid</p>
+                        </div>
+                        <!--Middle-->
+                        <div class="product-mid">
+                            <div class="product-user">
+                                <img src="./assets/img/user.png" alt="user">
+                                <p>@thetroncous</p>
+                            </div>
+                            <span>6.89 eTH</span>
+                        </div>
+                        <!--Bottom-->
+                        <div class="product-bottom">
+                            <div class="offer-time">
+                                <img src="./assets/img/fire.png" alt="Fire">
+                                <p>05:12:07</p>
+                            </div>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <!--product 5-->
+                <div class="product">
+                    <img src="./assets/img/products/toretto.png" alt="Toretto">
+                    <div class="product-info">
+                        <!--Top-->
+                        <div class="product-top">
+                            <h3>toretto</h3>
+                            <p>Current Bid</p>
+                        </div>
+                        <!--Middle-->
+                        <div class="product-mid">
+                            <div class="product-user">
+                                <img src="./assets/img/user.png" alt="user">
+                                <p>@thetroncous</p>
+                            </div>
+                            <span>6.89 eTH</span>
+                        </div>
+                        <!--Bottom-->
+                        <div class="product-bottom">
+                            <div class="offer-time">
+                                <img src="./assets/img/fire.png" alt="Fire">
+                                <p>05:12:07</p>
+                            </div>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <!--product 6-->
+                <div class="product">
+                    <img src="./assets/img/products/toretto.png" alt="Toretto">
+                    <div class="product-info">
+                        <!--Top-->
+                        <div class="product-top">
+                            <h3>toretto</h3>
+                            <p>Current Bid</p>
+                        </div>
+                        <!--Middle-->
+                        <div class="product-mid">
+                            <div class="product-user">
+                                <img src="./assets/img/user.png" alt="user">
+                                <p>@thetroncous</p>
+                            </div>
+                            <span>6.89 eTH</span>
+                        </div>
+                        <!--Bottom-->
+                        <div class="product-bottom">
+                            <div class="offer-time">
+                                <img src="./assets/img/fire.png" alt="Fire">
+                                <p>05:12:07</p>
+                            </div>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn-load">Ver mas</button>
+        </section>
+
+        <footer>
+            <nav>
+                <ul class="footer-link">
+                    <li><a href="#">Terminos de uso</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                    <li><a href="#">soporte</a></li>
+                </ul>
+            </nav>
+            <p>hecho con amor en <span>NUCBACRYPTO</span></p>
+        </footer>
+
+
+
+
+    </main>
+    
+</body>
+</html>
