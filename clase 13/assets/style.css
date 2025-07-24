@@ -43,17 +43,18 @@ body{
 
 /*------------------HEADER------------*/
 header{
-    background: linear-gradient(to bottom, var(--to-gradient), var(--background));
+    /*background-color: var(--secondary);*/
+    background: linear-gradient(to bottom, var(--to-gradient), var(--background)); /*cambiamos el background del header*/
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
     height: 65px;
-    position: fixed; 
+    position: fixed;
     width: 100%;
 }
 
-.navbar, .navbarlist {
+.navbar, .navbar-list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,21 +64,21 @@ header{
     gap: 150px ;
 }
 
-.navbarlist {
+.navbar-list {
     gap: 30px ;
 }
 
-.navbarlist a{
+.navbar-list a{
     color: var(--text-gray);
     font-size: 14px;
 }
 
-/* .navbarlist li:first-child> a{
+/* .navbar-list li:first-child> a{
     font-weight: 600;
     color: var(--text-white);
 } */
 
-.navbarlist .active {
+.navbar-list .active {
     font-weight: 600;
     color: var(--text-white);
 }
@@ -87,24 +88,40 @@ header{
 }
 
 
-/*--------CARRITO--------*/
-#cart-toggle {
+/*============CARRITO=============*/
+#cart-toggle, #menu-toggle, .menu-label {
     display: none;
 }
-.cart {
+
+.cart{
     position: absolute;
     right: 0px;
     top: 65px;
-    background: linear-gradient(to bottom, var(--to-gradient), var(--background));
+    background: linear-gradient(to bottom, var(--background), var(--to-gradient));
     padding: 50px 30px;
     border-left: 1px solid var(--nav-bg);
     height: calc(100vh - 65px);
+
+    /*display: flex;   lo sacamos porque no queremos que se vea */
+    flex-direction: column;
+    gap: 30px;
+    justify-content: start;
+
+    overflow-y: scroll;
+    scrollbar-color: #121e3c var(--lightblue);
+    scrollbar-width: none;
+
+    display: none;
 }
 
 .cart h2 {
-color: var(--text-white);
-font-size: 20px;
-font-weight: 600;
+    color: var(--text-white);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cart-icon{
+    cursor: pointer;
 }
 
 .cart-item {
@@ -115,11 +132,7 @@ font-weight: 600;
     padding: 20px;
     border: 1px solid var(--electric);
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    background: #232323;
+    background: #23232375;
 }
 
 .item-title {
@@ -134,6 +147,60 @@ font-weight: 600;
     font-weight: 300;
 }
 
+.item-price {
+    background: linear-gradient(to right, var(--lightblue), var(--pink));
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+.item-handler {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-handler {
+    color: var(--text-white);
+    padding: 2px 8px;
+    border: 1px solid var(--electric);
+    border-radius: 5px;
+}
+
+.down {
+    background-color: var(--secondary);
+}
+
+.item.quantity {
+    color: var(--text-gray);
+}
+
+.divider{
+    margin-top: 20px;
+    border: 0.5px solid var(--electric);
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-white);
+}
+
+.cart-total p {
+    font-weight: 700;
+
+}
+
+.cart-total span {
+    font-size: 18px;
+}
+
+/*ACA HACEMOS MAGIA*/
+
+#cart-toggle:checked + .cart{
+    display: flex;
+}
 
 
 
